@@ -256,8 +256,6 @@ This section will cover how the update function is called, via what systems, wha
 
 - Need to look into microraiden
 
-- Need to look into mongo-connector for DB transfers
-
 
 ### Block workflow
 
