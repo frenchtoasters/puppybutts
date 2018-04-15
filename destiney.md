@@ -284,3 +284,35 @@ When we are able to demonstrate how to do this in a structured way that is easy 
 This section will cover the scale at with development will need to keep up.
 
 Development is the only way this project works, we have to build the update payload to be just a simple json object that allows the nodes to query the DEX to see the information, package it, and write it to the blockchain. Which is then queryable by all with the DApp. To make your DEX support it all you would have to do is make it really simple for us to query your api, or we could just propose a standard for DEX to support and advicate for it via the foundation.  
+
+### Node Structure
+
+This section will cover the different types of nodes that are run and how the system will interact with various components.
+
+Node structure
+	- Verifier Nodes
+		- Run by foundation
+		- Writes data to block chain
+		- Offer others to go through verification process to be able to run Verifier Node
+			- Technical verification of availability and fail over stuff by foundation memebers
+	- Buffer Nodes
+		- Run by foundation and anyone running a Gather Node
+		- A distributed zero message queue that just holds the Y number data hashes
+		- Queried by the Verifier Nodes?
+		- Once Y number reached sends all data hashes to Verifier Nodes?
+	- Gather Nodes
+		- We will initially run some for Z amount of time
+		- Traditional master nodes that gather the data
+		- Anyone can run them if they have enough X token to bond/stake (currently undecided on which it should be)
+
+WorkFlow
+	- Gather Node query's all supported exchanges and packages up data in correct format
+	- Gather Node calls api call of smart contract to offer hash of data to be verified
+	- Verifier Node is waiting for Y number of tx hashs to verify are in the queue
+	- Once Y number reached in queue, Verifier Node gets sent data hashes and is able to come to consensus on valid data
+	- Write data to DB
+	- Work on the next block in the queue?
+	- Wait for next Y number of data hashes to verify?
+
+
+COULD YOU USE RANCHER NODES TO MANAGE THE RUNNING OF THIS SHIT?????
