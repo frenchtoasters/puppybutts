@@ -258,6 +258,9 @@ contract poopyIndex {
 		- https://w3c-ccg.github.io/did-spec/
 	- Check out this tutorial for how to create the coins and how to write an update function 
 		- https://www.bigchaindb.com/developers/guide/tutorial-car-telemetry-app/
+	- Also re-read following
+		- https://blog.bigchaindb.com/crab-create-retrieve-append-brun-b9f6d111f460?gi=e45c91830438
+		- https://docs.bigchaindb.com/projects/server/en/latest/introduction.html
 	
 
 
