@@ -237,6 +237,26 @@ contract poopyIndex {
 
 - With IPFS we can host the data on the masternode systems
 
+- BigchainDB, this is a library that could be used for the database backend
+	- Has python *and* node.js implementations
+	- The way that they say to layout the DB is to look at everything as a ***Assest*** 
+		- This would we would look at every coin as an individual ***Assest*** with different metadatavalues, but they are all mostly the same.
+			- store price in db individually per exchange then have query calculate average
+	- With this method we will need to allow access to the digital ***Assests*** based on masternode/supernode stake values, then every tx on the network contains some update to the DB of the metadata on the ***Assests***
+		- Will want to batch many of the tx's together
+		- Will need relatively quick block times
+			- 30 sec Great, 1 min Ok, 2 min's nothing better worth using aka ETH
+	- Will need an assest create function in the SC so that we can add new coins
+		- Will only be allowed to be executed by owner aka foundation
+	- CAN SETUP DB AS TIMESERIES DATA FOR EACH COIN
+		- Already proven in data gatherer
+	- Has RBAC
+		- Good to easy controls
+	- BigchainDB v1.3 has ability to query for metadata
+		- https://blog.bigchaindb.com/bigchaindb-version-1-37940cc60c767
+	
+
+
 ### How Do we call the update function?
 
 This section will cover how the update function is called, via what systems, what parameters, etc...
