@@ -254,6 +254,10 @@ contract poopyIndex {
 		- Good to easy controls
 	- BigchainDB v1.3 has ability to query for metadata
 		- https://blog.bigchaindb.com/bigchaindb-version-1-37940cc60c767
+	- Will setup the coins as DID(decentralized identifiers) which says they are "self-sovereign"
+		- https://w3c-ccg.github.io/did-spec/
+	- Check out this tutorial for how to create the coins and how to write an update function 
+		- https://www.bigchaindb.com/developers/guide/tutorial-car-telemetry-app/
 	
 
 
